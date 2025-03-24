@@ -354,9 +354,8 @@
   .card__save-button {
     flex-direction: row;
     height: 55px;
-    margin-top: 50px;
     width: 335px;
-    height: 51px;
+    margin-top: 50px;
   }
 
   .save_icon {
