@@ -13,66 +13,62 @@
 .core {
   fill: transparent;
   transition: fill 0.3s ease-in;
-  transition-delay: 0.05s;
+  transition-delay: 0.03s;
 }
 
 .contour {
   fill: var(--contour-color);
-  transition: fill 0.3s ease-in;
-  transition-delay: 0.05s;
+  transition: fill 0.1s ease-in;
 }
 
 .main-body {
   fill: transparent;
   transition: fill 0.3s ease-in;
-  transition-delay: 0.05s;
 }
 
 .sparks {
   opacity: 0;
   fill: var(--animation-fill-color);
-  transition-delay: 0.05s;
 }
 
 .like-icon:hover .core {
   fill: #000;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease;
 }
 
 .like-icon:hover .main-body {
   fill: #000;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease;
+  transition-delay: 0.05s;
 }
 
 .like-icon:active .core {
   fill: var(--animation-fill-color);
-  transition-delay: 0.01s;
-  transition: fill 0.3s ease-in;
+  transition-delay: 0s;
+  transition: fill 0.3s ease;
 }
 
 .like-icon:active .main-body {
   fill: var(--animation-fill-color);
-  transition-delay: 0.01s;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.03s ease-in 0.1s;
 }
 
 .like-icon.is-liked .core {
   fill: var(--animation-fill-color);
   transition-delay: 0s;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease;
 }
 
 .like-icon.is-liked .main-body {
   fill: var(--animation-fill-color);
   transition-delay: 0.05s;
-  transition: fill 0.3s ease-in;
+  transition: fill 0.3s ease;
 }
 
 .like-icon.is-liked .contour {
   fill: var(--animation-fill-color);
   transition-delay: 0.06s;
   transition-duration: 0.3s;
-  transition: fill 0.3s ease-in;
 }
 
 .like-icon.is-liked .sparks {
@@ -80,7 +76,7 @@
   animation: heartsParticles 0.3s ease-in 0.3s;
 }
 
-@keyframes zoomHaert {
+@keyframes zoomHeart {
   0% {
     transform: scale(1);
   }
@@ -95,7 +91,7 @@
 }
 
 .like-icon.is-liked {
-  animation: zoomHaert 0.3s ease-in 0.1s;
+  animation: zoomHeart 0.3s ease-in 0.1s;
 }
 
 @keyframes heartsParticles {
@@ -127,7 +123,7 @@
   transform: translateX(0);
 }
 
-.button_card_footer .save_icon {
+.button_animation .save_icon {
   position: relative;
   mix-blend-mode: difference;
   z-index: 2;

@@ -90,7 +90,7 @@
   text-transform: uppercase;
   mix-blend-mode: hard-light;
   filter: none;
-  opacity: 1;
+  opacity: 50%;
   text-shadow: 1px 1px 2px #fff;
 }
 
@@ -198,15 +198,15 @@
   overflow: hidden;
   font-family: var(--accent-fonts, "PressStart2P"), fantasy;
   font-size: 14px;
-  /* padding: 12.5px 37px; */
+   padding: 10.5px 37px;
   width: 130px;
-  height: 38px;
   line-height: 90%;
   border: 2px solid #000;
   margin-inline-start: 3px;
   background-color: transparent;
   cursor: pointer;
   transition: box-shadow 0.3s ease;
+  transition: color 0.3s ease-in-out;
 }
 
 .card__like-button:hover {
@@ -230,13 +230,15 @@
   background-color: var(--text-color-animation);
   color: var(--text-color-animation);
   width: 306px;
-  height: 80px;
+  padding-block-start: 11px;
+  padding-block-end: 9px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   margin-top: 52px;
   margin-bottom: 100px;
   transition: color 0.3s ease-in-out;
+  transition: box-shadow 0.3s ease;
 }
 
 .button__text {
@@ -244,7 +246,6 @@
   position: relative;
   z-index: 1;
   mix-blend-mode: difference;
-  transition: color 0.3s ease-in-out;
 }
 
 .card__save-button:focus {
@@ -253,7 +254,6 @@
 
 .card__save-button:focus-visible {
   box-shadow: 2px 2px 0px 0px #000000;
-  transition: box-shadow 0.3s ease;
 }
 
 .save_icon {
@@ -287,7 +287,7 @@
 }
 
 #dialog_window::backdrop {
-  background: rgba(0, 0, 0, 0.7);
+  background: #000;
   opacity: 75%;
 }
 
@@ -312,6 +312,7 @@
   cursor: pointer;
   margin-left: 10px;
   margin-right: 10px;
+  transition: box-shadow 0.3s ease;
 }
 
 .dialog_botton:focus {
@@ -320,7 +321,6 @@
 
 .dialog_botton:focus-visible {
   box-shadow: 2px 2px 0px 0px #000000;
-  transition: box-shadow 0.3s ease;
 }
 
 .dialog_botton_text {
@@ -353,7 +353,8 @@
 
   .card__save-button {
     flex-direction: row;
-    height: 55px;
+    padding-block-start: 15px;
+    padding-block-end: 12px;
     width: 335px;
     margin-top: 50px;
   }
