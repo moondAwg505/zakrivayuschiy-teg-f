@@ -237,7 +237,6 @@
   overflow: hidden;
   margin-top: 52px;
   margin-bottom: 100px;
-  transition: color 0.3s ease-in-out;
   transition: box-shadow 0.3s ease;
 }
 
