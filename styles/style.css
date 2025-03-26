@@ -71,7 +71,7 @@
 }
 
 .card:not(:last-child) {
-  margin-block-end: 52px;
+  margin-block-end: 49px;
 }
 
 .image-wrapper {
@@ -198,7 +198,7 @@
   overflow: hidden;
   font-family: var(--accent-fonts, "PressStart2P"), fantasy;
   font-size: 14px;
-   padding: 10.5px 37px;
+  padding: 12px 18px;
   width: 130px;
   line-height: 90%;
   border: 2px solid #000;
@@ -281,7 +281,7 @@
   display: flex;
   flex-direction: column;
   width: 341px;
-  height: 191px;
+  padding-block-start: 25px;
 }
 
 #dialog_window::backdrop {
