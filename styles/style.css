@@ -131,7 +131,7 @@
   filter: grayscale(100%);
 }
 
-.image_card.image_blurr {
+.image_card.image_blur {
   filter: blur(3px);
 }
 
@@ -273,7 +273,7 @@
 }
 
 .save_icon_dialog {
-  width: 104px;
+  width: 88px;
   height: 55px;
 }
 
@@ -281,7 +281,6 @@
   display: flex;
   flex-direction: column;
   width: 341px;
-  padding-block-start: 25px;
 }
 
 #dialog_window::backdrop {
@@ -291,7 +290,7 @@
 
 .dialog_container {
   display: flex;
-  margin: 20px 20px;
+  margin: 13px 20px 30px 20px;
 }
 
 .dialog_text {
@@ -308,8 +307,9 @@
   border: 2px solid #000;
   background-color: #fff;
   cursor: pointer;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 10px;
   transition: box-shadow 0.3s ease;
 }
 
@@ -367,7 +367,12 @@
     margin-inline-start: 8px;
   }
 
+  .dialog_botton {
+  margin-left: 10px;
+  margin-right: 10px;
+  }
+
   #dialog_window[open] {
-    width: 357px;
+    width: 353px;
   }
 }
